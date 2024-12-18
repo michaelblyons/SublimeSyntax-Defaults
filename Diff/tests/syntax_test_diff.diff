@@ -574,11 +574,9 @@ The name that can be named is no   <
 The Nameless is the origin of He        The Nameless is the origin of He
 \^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup
 The Named is the mother of all t   |    The named is the mother of all t
-\^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.changed.diff
+\^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.changed.diff
 \                                  ^ punctuation.definition.changed.diff
-\                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.changed.diff
-                                   >
-\                                  ^ punctuation.definition.inserted.diff
+\                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.changed.diff
 Therefore let there always be no        Therefore let there always be no
   so we may see their subtlety,           so we may see their subtlety,
 And let there always be being,          And let there always be being,
@@ -588,10 +586,13 @@ But after they are produced,            But after they are produced,
   they have different names.              they have different names.
                                    >    They both may be called deep and
 \                                  ^ punctuation.definition.inserted.diff
-\                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.inserted.diff
+\                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.inserted.diff
                                    >    Deeper and more profound,
 \                                  ^ punctuation.definition.inserted.diff
-\                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.inserted.diff
+\                                       ^^^^^^^^^^^^^^^^^^^^^^^^^ markup.inserted.diff
                                    >    The door of all subtleties!
 \                                  ^ punctuation.definition.inserted.diff
-\                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.inserted.diff
+\                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.inserted.diff
+
+ Context lines / surrounding lines can be accidentally included!
+\^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup

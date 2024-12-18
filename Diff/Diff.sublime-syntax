@@ -317,25 +317,29 @@ contexts:
 ###[ SIDE-BY-SIDE ]############################################################
 
   # https://www.gnu.org/software/diffutils/manual/diffutils.html#Side-by-Side
+  # This is best-guess, because we don't know what width instructions are
+  # given to the diff or sdiff command.
   side-by-side:
-    - match: ^(.*)   (<)$
+    - match: ^(.*) +(<)$
       captures:
         1: markup.deleted.diff
         2: punctuation.definition.deleted.diff
-    - match: ^(.*)   (\()$
+    - match: ^(.*) +(\()$
       captures:
         1: comment.line.diff
         2: punctuation.definition.deleted.diff
-    - match: ^(.*)   ([\\|/])   (.*)$
+    # Not starting with space to attempt to avoid context lines in other diff
+    # styles.
+    - match: ^([^ ].*) +([\\|!/]) +(.*)$
       captures:
         1: markup.changed.diff
         2: punctuation.definition.changed.diff
         3: markup.changed.diff
-    - match: '^   {4,}(>)(?:   (.*))?$'
+    - match: '^  +(>)(?: +(.*))?$'
       captures:
         1: punctuation.definition.inserted.diff
         2: markup.inserted.diff
-    - match: '^   {4,}(\))(?:   (.*))?$'
+    - match: '^  +(\))(?: +(.*))?$'
       captures:
         1: punctuation.definition.inserted.diff
         2: comment.line.diff
