@@ -26,7 +26,7 @@ first_line_match: |-
 
 contexts:
   main:
-    - match: '{{bol}}(?={{git_first_line}})'
+    - match: (?={{git_first_line}})
       push: email-first-line
 
     # If you can't find the magic first line, just highlight diffs.
