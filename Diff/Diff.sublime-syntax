@@ -30,7 +30,7 @@ contexts:
       escape: (?!)
     # Hack for unit tests
     - include: incomplete-line
-    - match: '{{bol}}'
+    - match: ^
       push: diffs
 
   diffs:
@@ -110,7 +110,7 @@ contexts:
       captures:
         1: punctuation.definition.to-file.diff
       push: diff-header-context-to-file
-    - match: '{{bol}}'
+    - match: ^
       pop: 1
 
   diff-header-context-to-file:
