@@ -16,7 +16,7 @@ file_extensions:
   - patch.mbox
 
 first_line_match: |-
-  '{{bol}}(?x:'
+  ^(?x:
     diff[ ]--(?:git|combined|cc)[ ]
     | From [ ] \w+@z [ ]
       Thu [ ] Jan [ ]{2} 1 [ ] 00:00:00 [ ] 1970  # git-send-email
