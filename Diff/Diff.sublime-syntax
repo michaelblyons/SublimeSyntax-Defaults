@@ -34,9 +34,9 @@ contexts:
       push: diffs
 
   diffs:
-    - include: conflicts
     - include: diff-line-ranges
     - include: diff-header
+    - include: conflicts
     - include: diff-deltas
     - include: diff3-edit
     - include: diff3-normal
