@@ -25,7 +25,7 @@ first_line_match: |-
 
 contexts:
   main:
-    - match: '{{bol}}(?={{git_first_line}})'
+    - match: (?={{git_first_line}})
       embed: Packages/Git Formats/Git Diff.sublime-syntax#email-first-line
       escape: (?!)
     # Hack for unit tests
@@ -334,9 +334,6 @@ contexts:
 ###############################################################################
 
 variables:
-  # No whitespace at beginning of line, unless overridden
-  bol: ^
-
   conflict_begin: <{5,}
   conflict_end: '>{5,}'
   conflict_split: ={5,}
